@@ -1,0 +1,147 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=latin,cyrillic';
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Ubuntu', serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: #FFE81F;
+  background: #000;
+}
+
+.header {
+  margin-bottom: 3rem;
+  text-align: center; 
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+  width: 90vw;
+}
+
+/* БЛОК ПОИСКА */
+
+.search-form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  width: 50%;
+}
+
+.search__request {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.label_select {
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.select__target {
+  margin-bottom: 15px;
+  padding: 5px;
+  border: solid 2px;
+  font-family: 'Ubuntu', serif;  
+  font-size: 20px;
+  color: #FFE81F;
+  background: #000;
+}
+
+.label_input {
+  display: flex;  
+  flex-flow: column;
+  margin-bottom: 15px;
+}
+
+.person__search {
+  align-self: center;
+  padding: 7px 10px;
+  margin-top: 10px;
+  width: 90%; 
+  border: solid 0px #000;
+  outline-color: #131417;
+  font-size: 20px;
+  background: #FFE81F;
+  color: black;
+}
+
+.button,
+.button:visited {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 16px;
+  border: solid 2px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;  
+  color: #FFE81F;
+  background-color: #000;
+  cursor: pointer;
+  transition: border-color linear 0.2s,
+  color linear 0.2s;
+}
+
+.button:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.search__result {
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.search__result_item {
+  padding: 7px;
+  margin: 10px;
+  border: solid 2px;
+  cursor: pointer;
+  transition: border-color linear 0.2s,
+  color linear 0.2s;
+}
+
+.search__result_item:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* БЛОК ВЫВОДА РЕЗУЛЬТАТА */
+
+.output-container {
+  padding: 15px;
+  width: 50%;
+}
+ 
+.person__data {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;  
+}
+
+.person__data__items {
+  margin-bottom: 15px;
+}
+
+.info-massage_start,
+.info-massage_choice {
+  padding: 10px;
+  outline: 2px solid;
+}
+
+.error-massage {
+  padding: 10px;
+  color: orange;
+  outline: 2px solid orange;
+}

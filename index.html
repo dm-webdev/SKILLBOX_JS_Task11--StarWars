@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 Client and server</title>
+  <link rel="stylesheet" href="style.css">
+<script src="myscript.js" defer></script>
+
+</head>
+
+<body>
+  <main class="main">
+    <h1 class="header">The Star Wars</h1>
+
+    <div class="content">
+      <div class="search-form">
+        <div class="search__request">
+          <label class="label_select">Выбирите цель поиска:
+            <select class="select__target">
+              <option disabled selected value="start">цель поиска</option>
+              <option id="people" value="0">персонаж</option>
+              <option id="starships" value="1">звездолет</option>
+              <option id="planets" value="2">планета</option>
+            </select>
+          </label>
+
+          <label class="label_input">Поиск цели:
+            <input class="person__search" type="text">
+          </label>
+
+          <button class="button">Найти</button>
+        </div>
+      </div>
+
+      <div class="output-container">
+        <p class="info-massage_start">Добрый день! Познакомьтесь с миром the Star Wars вместе с нами!</p>
+
+        <p class="info-massage_choice" hidden>Пожалуйста, выбирите категорию поиска!</p>
+
+        <p class="error-massage error-massage_server" hidden>Произошла ошибка:
+          <span class="response-message"></span> Повторите запрос позднее.
+        </p>
+
+        <p class="error-massage error-massage_search" hidden>К сожалению, нет данных удовлетворяющих вашему запросу:
+          <span class="url"></span> Повторите запрос.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
